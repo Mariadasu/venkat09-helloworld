@@ -5,7 +5,7 @@ node {
         checkout scm
 
    stage 'Setup'
-        sh 'sudo apt-get install -y build-essential'
+        sh 'apt-get install -y build-essential'
 		sh 'sudo curl -sL https://deb.nodesource.com/setup_6.x'
 		sh 'sudo apt-get install -y nodejs'
 		sh 'sudo npm install'
