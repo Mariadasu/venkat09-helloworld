@@ -5,10 +5,10 @@ node {
         checkout scm
 
    stage 'Setup'
-        sh 'apt-get install -y build-essential'
-		sh 'sudo curl -sL https://deb.nodesource.com/setup_6.x'
-		sh 'sudo apt-get install -y nodejs'
-		sh 'sudo npm install'
+        sh 'yum install gcc-c++ make'
+		sh 'curl -sL https://deb.nodesource.com/setup_6.x'
+		sh 'yum install -y nodejs'
+		sh 'npm install'
 
    stage 'Mocha test'
         sh './node_modules/mocha/bin/mocha'
