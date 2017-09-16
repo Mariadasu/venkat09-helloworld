@@ -11,8 +11,8 @@ node {
         sh 'sudo npm install'
 
    stage 'Mocha test'
-        sh 'npm init --yes'
-		sh 'npm install mocha --save-dev'
+        sh 'sudo npm init --yes'
+		sh 'sudo npm install mocha --save-dev'
         sh './node_modules/mocha/bin/mocha'
 
    stage 'Cleanup'
