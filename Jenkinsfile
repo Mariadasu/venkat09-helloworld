@@ -5,6 +5,8 @@ node {
         checkout scm
 
    stage 'Setup'
+        sh 'sudo curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -'
+		sh 'sudo yum -y install nodejs'
 		sh 'sudo npm install -g grunt --save-dev'
         sh 'sudo npm install'
 
