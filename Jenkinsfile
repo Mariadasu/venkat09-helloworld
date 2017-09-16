@@ -18,6 +18,6 @@ node {
 
    stage 'Cleanup'
         echo 'prune and cleanup'
-        sh 'npm prune'
-        sh 'rm node_modules -rf'
+        sh 'sudo npm prune'
+        sh 'sudo rm node_modules -rf'
 }
