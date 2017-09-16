@@ -5,7 +5,7 @@ node {
         checkout scm
 
    stage 'Setup'
-        sh 'sudo curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -'
+        sh 'sudo curl -sL https://deb.nodesource.com/setup_6.x | -E bash -'
 		sh 'sudo apt-get install -y nodejs'
 		sh 'sudo npm install'
 
