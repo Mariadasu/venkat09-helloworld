@@ -13,6 +13,7 @@ node {
    stage 'Mocha test'
         sh 'sudo npm init --yes'
 		sh 'sudo npm install mocha --save-dev'
+		sh 'sudo npm install zombie --save-dev'
         sh './node_modules/mocha/bin/mocha'
 
    stage 'Cleanup'
