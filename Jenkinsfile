@@ -5,6 +5,7 @@ node {
         checkout scm
 
    stage 'Setup'
+		sh 'sudo npm install -g grunt --save-dev'
         sh 'sudo npm install'
 
    stage 'Mocha test'
