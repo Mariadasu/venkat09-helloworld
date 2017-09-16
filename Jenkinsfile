@@ -5,7 +5,7 @@ node {
         checkout scm
 
    stage 'Setup'
-        sh 'sudo yum install gcc-c++ make'
+        sh 'sudo -S yum install gcc-c++ make'
 		sh 'curl -sL https://deb.nodesource.com/setup_6.x'
 		sh 'yum install -y nodejs'
 		sh 'npm install'
