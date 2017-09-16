@@ -5,7 +5,9 @@ node {
         checkout scm
 
    stage 'Setup'
-        sh 'npm install'
+        sh 'curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -'
+		sh 'sudo apt-get install -y nodejs'
+		sh 'npm install'
 
    stage 'Mocha test'
         sh './node_modules/mocha/bin/mocha'
