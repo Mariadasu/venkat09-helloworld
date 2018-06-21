@@ -1,2 +1,0 @@
-# aws
-aws src code
